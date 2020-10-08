@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: 0;
+    user-select: none;
+}
+
+#app {
+    width: 610px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+#app > div {
+    border: .5px solid #fff;
+    width: 59px;
+    height: 59px;
+    float: left;
+}
+.item {
+    background-image:url(./img/init.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#app::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.null {
+    background-image:url(./img/null.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.die {
+    background-image:url(./img/die.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.score {
+    background-image:url(./img/bingo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reset {
+    width: 200px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    margin: 30px auto 0;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: lime;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.show-step {
+    width: 200px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    margin: 30px auto;
+    border: 2px solid lime;
+    font-weight: bold;
+    font-size: 22px;
+}
